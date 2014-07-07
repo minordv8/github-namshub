@@ -1,0 +1,15 @@
+<h4>Issues</h4>
+<table class="table table-striped">
+<tbody>
+	{{#each}}
+		<tr>
+			<td><img {{bind-attr src="user.avatar_url"}} style="width:100px;" /></td>
+			<td>{{title}}
+			<hr />
+			{{fromDate created_at}} </td>
+		</tr>
+	{{else}}
+		<tr><td><p class="text-muted">No issues yet!</p></td></tr>	
+	{{/each}}
+</tbody>
+</table>

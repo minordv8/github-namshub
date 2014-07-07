@@ -1,0 +1,10 @@
+<h1>Github Namshub</h1>
+<hr />
+<p>This is the Github explorer for all our favorite developers</p>
+<ul>
+	{{#each}}
+	<li>{{#link-to 'user' this.login}}{{name}}{{/link-to}}</li>
+	{{/each}}
+</ul>
+<p><button class="btn btn-success" {{action "clicked"}}>Click Me!</button></p>
+<p>{{renderedOn}}</p>

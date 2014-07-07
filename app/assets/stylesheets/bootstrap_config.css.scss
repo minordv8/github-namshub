@@ -1,0 +1,10 @@
+/* Add variable overrides above the import */
+
+//$grid-float-breakpoint: 769px;
+//$font-family-sans-serif: 'MyriadPro-Regular', sans-serif;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Add property overrides below the import */
+
