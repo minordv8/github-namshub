@@ -1,3 +1,27 @@
 == Ember app in Rails
 
 My version of the Ember.js Fundamentals tutorial built on Rails
+
+
+= Notes:
+
+Ember follows a desktop MVC. It's not a server side MVC like Rails. 
+
+Router: App.TablesRoute = Ember.Route.extend({ this.resource("tables") });
+
+Controller: App.TablesController = Ember.Controller.extend({...});
+
+Model: App.Table = Ember.Object.extend({...});
+
+View: Views are created when a sophiticated handling of user events is needed and/or to create a re-usable component
+
+Template: handlebars file containing HTML and you injection points {{outlet}}
+
+= Ember Incantation:
+
+Everything starts with the URL
+A URL maps to a route
+A route prepares the data
+A Route prepares the controller
+The controller is shoved into a template
+
